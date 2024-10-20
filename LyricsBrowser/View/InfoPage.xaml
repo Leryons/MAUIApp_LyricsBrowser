@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LyricsBrowser.View.InfoPage"
+             Title="">
+    <VerticalStackLayout>
+
+        <Image Source="Images/leox.png"
+               Aspect="AspectFill"
+               HeightRequest="250"
+               WidthRequest="250"/>
+
+        <Label Text="About it..."
+               FontSize="20"
+               HorizontalOptions="Center"
+               Padding="30"/>
+
+        <Label Text="App Developed by: Leonardo Pulgar"
+               FontSize="15"
+               HorizontalOptions="Center"
+               Padding="5"/>
+
+        <Label Text="API Developed by: Eduard Fernandez"
+               FontSize="15"
+               HorizontalOptions="Center"
+               Padding="5"/>
+
+        <Label Text="*This API contains GeniusAPI*"
+               FontSize="10"
+               HorizontalOptions="Center"
+               Padding="50"
+               Opacity="0.3"/>
+
+    </VerticalStackLayout>
+</ContentPage>

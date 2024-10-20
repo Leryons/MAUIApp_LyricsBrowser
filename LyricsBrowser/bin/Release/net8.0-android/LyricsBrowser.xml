@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LyricsBrowser</name>
+    </assembly>
+    <members>
+        <member name="T:LyricsBrowser.ViewModel.BaseViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="P:LyricsBrowser.ViewModel.BaseViewModel.IsBusy">
+            <inheritdoc cref="F:LyricsBrowser.ViewModel.BaseViewModel.isBusy"/>
+        </member>
+        <member name="T:LyricsBrowser.ViewModel.SongDetailsViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="P:LyricsBrowser.ViewModel.SongDetailsViewModel.CurrentSong">
+            <inheritdoc cref="F:LyricsBrowser.ViewModel.SongDetailsViewModel.currentSong"/>
+        </member>
+        <member name="T:LyricsBrowser.ViewModel.SongViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:LyricsBrowser.ViewModel.SongViewModel.SongName">
+            <inheritdoc cref="F:LyricsBrowser.ViewModel.SongViewModel.songName"/>
+        </member>
+        <member name="P:LyricsBrowser.ViewModel.SongViewModel.CurrentSong">
+            <inheritdoc cref="F:LyricsBrowser.ViewModel.SongViewModel.currentSong"/>
+        </member>
+        <member name="F:LyricsBrowser.ViewModel.SongViewModel.goToDetailsCommand">
+            <summary>The backing field for <see cref="P:LyricsBrowser.ViewModel.SongViewModel.GoToDetailsCommand"/>.</summary>
+        </member>
+        <member name="P:LyricsBrowser.ViewModel.SongViewModel.GoToDetailsCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:LyricsBrowser.ViewModel.SongViewModel.GoToDetailsAsync(LyricsBrowser.Model.Song)"/>.</summary>
+        </member>
+        <member name="F:LyricsBrowser.ViewModel.SongViewModel.searchSongCommand">
+            <summary>The backing field for <see cref="P:LyricsBrowser.ViewModel.SongViewModel.SearchSongCommand"/>.</summary>
+        </member>
+        <member name="P:LyricsBrowser.ViewModel.SongViewModel.SearchSongCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:LyricsBrowser.ViewModel.SongViewModel.SearchSongAsync"/>.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsBusy">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsBusy" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.CurrentSong">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "CurrentSong" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.SongName">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "SongName" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsBusy">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsBusy" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsNotBusy">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsNotBusy" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.CurrentSong">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "CurrentSong" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.SongName">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "SongName" generated properties.</summary>
+        </member>
+    </members>
+</doc>

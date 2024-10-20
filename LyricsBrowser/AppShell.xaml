@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="LyricsBrowser.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:view="clr-namespace:LyricsBrowser.View"
+    Shell.FlyoutBehavior="Flyout"
+    Title="LyricsBrowser">
+
+    <Shell.FlyoutHeader>
+        <Grid BackgroundColor="Black" Padding="0">
+            <Image Source="Images/leox.png"
+                   Aspect="AspectFill"
+                   HeightRequest="160"
+                   WidthRequest="160"/>
+
+            <Label Text="Lyrics Browser"
+                   FontSize="24"
+                   Padding="0,0,0,8"
+                   VerticalOptions="End" 
+                   HorizontalOptions="CenterAndExpand" />
+        </Grid>
+    </Shell.FlyoutHeader>
+   
+    <ShellContent
+        Title="Home"
+        FlyoutIcon="home_icon.png"
+        ContentTemplate="{DataTemplate view:MainPage}"
+        Route="MainPage"/>
+
+    <ShellContent
+        Title="Lyric"
+        FlyoutIcon="lyric_icon.png"
+        ContentTemplate="{DataTemplate view:SongDetails}"
+        Route="SongDetails"/>
+
+    <ShellContent
+        Title="Info"
+        FlyoutIcon="info_icon.png"
+        ContentTemplate="{DataTemplate view:InfoPage}"
+        Route="InfoPage"/>
+
+</Shell>

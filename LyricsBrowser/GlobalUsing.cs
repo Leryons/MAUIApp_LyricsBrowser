@@ -1,0 +1,16 @@
+﻿global using CommunityToolkit.Mvvm.ComponentModel;
+global using CommunityToolkit.Mvvm.Input;
+global using System.Collections.ObjectModel;
+global using System.ComponentModel;
+global using System.Diagnostics;
+global using System.Runtime.CompilerServices;
+global using System.Text.Json;
+global using Newtonsoft.Json.Linq;
+global using Newtonsoft.Json;
+global using System.Threading.Tasks;
+global using LyricsBrowser.Model;
+global using LyricsBrowser.ViewModel;
+global using LyricsBrowser.View;
+global using LyricsBrowser.Service;
+global using Microsoft.Extensions.Logging;
+global using System.Net.Http;

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <BundleResource Include="C:\Users\pulga\source\repos\LyricsBrowser\LyricsBrowser\obj\Release\net8.0-maccatalyst\resizetizer\r\Resources\lyric2_icon.png" />
+    <BundleResource Include="C:\Users\pulga\source\repos\LyricsBrowser\LyricsBrowser\obj\Release\net8.0-maccatalyst\resizetizer\r\Resources\leox.png" />
+    <BundleResource Include="C:\Users\pulga\source\repos\LyricsBrowser\LyricsBrowser\obj\Release\net8.0-maccatalyst\resizetizer\r\Resources\lyric_icon.png" />
+    <BundleResource Include="C:\Users\pulga\source\repos\LyricsBrowser\LyricsBrowser\obj\Release\net8.0-maccatalyst\resizetizer\r\Resources\home_icon.png" />
+    <BundleResource Include="C:\Users\pulga\source\repos\LyricsBrowser\LyricsBrowser\obj\Release\net8.0-maccatalyst\resizetizer\r\Resources\info_icon.png" />
+    <BundleResource Include="C:\Users\pulga\source\repos\LyricsBrowser\LyricsBrowser\obj\Release\net8.0-maccatalyst\resizetizer\r\dotnet_bot@3x.png" />
+    <BundleResource Include="C:\Users\pulga\source\repos\LyricsBrowser\LyricsBrowser\obj\Release\net8.0-maccatalyst\resizetizer\r\dotnet_bot@2x.png" />
+    <BundleResource Include="C:\Users\pulga\source\repos\LyricsBrowser\LyricsBrowser\obj\Release\net8.0-maccatalyst\resizetizer\r\dotnet_bot.png" />
+    <BundleResource Include="obj\Release\net8.0-maccatalyst\resizetizer\f\OpenSans-Regular.ttf" />
+    <BundleResource Include="obj\Release\net8.0-maccatalyst\resizetizer\f\OpenSans-Semibold.ttf" />
+    <BundleResource Include="obj\Release\net8.0-maccatalyst\resizetizer\f\Roboto-Regular.ttf" />
+  </ItemGroup>
+</Project>

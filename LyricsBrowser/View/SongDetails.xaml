@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodel="clr-namespace:LyricsBrowser.ViewModel"
+             x:DataType="viewmodel:SongDetailsViewModel"
+             x:Class="LyricsBrowser.View.SongDetails"
+             Title="{Binding CurrentSong.Artist}">
+
+    <ScrollView>
+
+        <ScrollView.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="#000000" Offset="0.0" />
+                <GradientStop Color="#434343" Offset="1.0" />
+            </LinearGradientBrush>
+        </ScrollView.Background>
+
+        <VerticalStackLayout Padding="0,0,0,20">
+
+            <Image Source="{Binding CurrentSong.AlbumImage}"
+                   Aspect="AspectFill"
+                   HorizontalOptions="Center"
+                   VerticalOptions="CenterAndExpand"
+                   WidthRequest="200"
+                   HeightRequest="200"
+                   Margin="5"/>
+
+            <Label Text="{Binding CurrentSong.Title}"
+                   TextColor="White"
+                   FontSize="20"
+                   HorizontalOptions="Center"
+                   Margin="0,20,0,0"/>
+
+            <Label Text="{Binding CurrentSong.ReleaseDate}"
+                   FontSize="12"
+                   HorizontalOptions="Center"/>
+
+            <Label Text="{Binding CurrentSong.Lyrics}"
+                   FontSize="19"
+                   HorizontalOptions="Start"
+                   Margin="20,50,20,0"/>
+        </VerticalStackLayout>
+
+    </ScrollView>
+
+</ContentPage>

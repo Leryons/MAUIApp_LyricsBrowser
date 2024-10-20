@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:model="clr-namespace:LyricsBrowser.Model"
+             xmlns:viewmodel="clr-namespace:LyricsBrowser.ViewModel"
+             x:DataType="viewmodel:SongViewModel"
+             x:Class="LyricsBrowser.View.MainPage"
+             Title="">
+    
+    <ScrollView>
+
+        <Grid ColumnDefinitions="*"
+              RowDefinitions="Auto, Auto, *">
+
+            <Grid.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="#000000" Offset="0.0" />
+                    <GradientStop Color="#434343" Offset="1.0" />
+                </LinearGradientBrush>
+            </Grid.Background>
+
+            <VerticalStackLayout Grid.Row="0"
+                                 Grid.Column="0"
+                                 Padding="40">
+
+                <Frame HeightRequest="350"
+                       WidthRequest="350"
+                       Background="Transparent"
+                       Padding="0">
+
+                    <Image Source="{Binding CurrentSong.AlbumImage}"
+                           Aspect="AspectFill"/>
+
+                </Frame>
+
+                <Label Text="{Binding CurrentSong.Title}"
+                       FontSize="15"
+                       Padding="0,20,0,0"
+                       HorizontalOptions="Center"/>
+
+                <Label Text="{Binding CurrentSong.Artist}"
+                       FontSize="12"
+                       HorizontalOptions="Center"/>
+
+            </VerticalStackLayout>
+
+            <Frame Grid.Row="1"
+                   HasShadow="False"
+                   Padding="0"
+                   Background="Transparent">
+
+                <Frame Padding="0"
+                       CornerRadius="5"
+                       Margin="40,0,40,0"
+                       BackgroundColor="Transparent">
+
+                    <Entry Placeholder="Search Song..."
+                           BackgroundColor="#1E1E1E"
+                           Text="{Binding SongName}"
+                           Completed="SendSongName"/>
+                </Frame>
+            </Frame>
+
+            <ActivityIndicator IsVisible="{Binding IsBusy}"
+                               IsRunning="{Binding IsBusy}"
+                               HorizontalOptions="FillAndExpand"
+                               VerticalOptions="CenterAndExpand"
+                               Color="#FFFFFF"
+                               Opacity="0.8"/>
+        </Grid>
+
+    </ScrollView>
+
+</ContentPage>
