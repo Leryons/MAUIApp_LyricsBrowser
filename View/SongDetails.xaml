@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodel="clr-namespace:lyricsBrowser.ViewModel"
+             x:DataType="viewmodel:SongViewModel"
+             x:Class="lyricsBrowser.View.SongDetails">
+
+    <ScrollView>
+
+        <ScrollView.Background>
+
+            <LinearGradientBrush EndPoint="1,1">
+                <GradientStopCollection>
+                    <GradientStop Offset="0"
+                                  Color="Black"/>
+
+                    <GradientStop Offset="0.5"
+                                  Color="#373737"/>
+
+                    <GradientStop Offset="1"
+                                  Color="#202020"/>
+                </GradientStopCollection>
+            </LinearGradientBrush>
+        </ScrollView.Background>
+        
+        <VerticalStackLayout>
+            <Label Text="{Binding CurrentSong.Title}"
+               TextColor="White"
+               FontSize="20"
+               HorizontalOptions="Center"
+               Margin="0,20,0,5"/>
+
+            <Label Text="{Binding CurrentSong.Lyrics}"
+                   TextColor="White"
+                   FontFamily="Arial Rounded"
+                   HorizontalOptions="Start"
+                   Margin="20,5,0,0"/>
+        </VerticalStackLayout>
+        
+    </ScrollView>
+    
+</ContentPage>
